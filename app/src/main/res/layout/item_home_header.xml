@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="user"
+            type="com.capstone.fotokui.domain.User" />
+        <variable
+            name="onHomeClick"
+            type="com.capstone.fotokui.ui.home.EpoxyHomeController.OnHomeClickListener" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/primary"
+        android:paddingTop="32dp"
+        android:paddingBottom="16dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_user_photo"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="44dp"
+            android:layout_marginEnd="16dp"
+            android:scaleType="centerCrop"
+            android:onClick="@{() -> onHomeClick.onProfileClick()}"
+            app:imageUrl="@{user.photo}"
+            app:placeholder="@{@drawable/ic_profile_placeholder}"
+            app:error="@{@drawable/ic_profile_error}"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:src="@drawable/dummy_user" />
+
+        <TextView
+            style="@style/titleHeader"
+            android:id="@+id/tv_user_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:layout_marginStart="16dp"
+            app:setupWelcomeMessage="@{user.name}"
+            app:layout_constraintEnd_toStartOf="@+id/iv_user_photo"
+            app:layout_constraintTop_toTopOf="@id/iv_user_photo"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:text="Halo, Amita" />
+
+        <TextView
+            style="@style/cardSubtitleStyle"
+            android:id="@+id/tv_user_description"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:textColor="@color/white"
+            android:text="@string/home_header_description"
+            app:layout_constraintEnd_toEndOf="@+id/tv_user_name"
+            app:layout_constraintTop_toBottomOf="@id/tv_user_name"
+            app:layout_constraintStart_toStartOf="@id/tv_user_name" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.FotoKui.TextInputLayout.OutlinedBox"
+            android:id="@+id/tie_search"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:layout_marginHorizontal="16dp"
+            app:hintEnabled="false"
+            app:startIconDrawable="@drawable/ic_search"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_user_description"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/find_your_location"
+                android:padding="8dp"
+                android:drawableEnd="@drawable/ic_search_location"
+                android:enabled="false" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:onClick="@{() -> onHomeClick.onMapClick()}"
+            app:layout_constraintBottom_toBottomOf="@+id/tie_search"
+            app:layout_constraintEnd_toEndOf="@+id/tie_search"
+            app:layout_constraintStart_toStartOf="@+id/tie_search"
+            app:layout_constraintTop_toTopOf="@+id/tie_search" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

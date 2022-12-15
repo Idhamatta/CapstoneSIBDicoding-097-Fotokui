@@ -1,0 +1,95 @@
+<resources>
+    <string name="app_name">FotoKui</string>
+
+    <string name="home">Home</string>
+    <string name="find_photographer">Find Photographer</string>
+    <string name="profile">Profile</string>
+    <string name="my_activities">Aktivitas saya</string>
+    <string name="photos">Photos</string>
+    <string name="chat_now">Chat sekarang</string>
+    <string name="description">Deskripsi</string>
+    <string name="cancel">Batal</string>
+    <string name="save">Simpan</string>
+    <string name="photographer_service">JASA FOTOGRAFER</string>
+    <string name="your_experience">Pengalaman anda*</string>
+    <string name="year_or_month">MM/YY</string>
+    <string name="your_price">Harga*</string>
+    <string name="zero">0</string>
+    <string name="like_this_photographer">Suka photographer ini</string>
+    <string name="favorite">Favorite</string>
+    <string name="your_description">Deskripsi*</string>
+    <string name="your_promotion">Promo</string>
+    <string name="name">Nama</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="logo_fotokui">Logo FotoKui</string>
+    <string name="welcome_message">Selamat Datang</string>
+    <string name="register_description">Silahkan register untuk melanjutkan</string>
+    <string name="register_now">Daftar Sekarang</string>
+    <string name="choose_role">Pilih tipe</string>
+    <string name="login">Masuk</string>
+    <string name="already_have_account">Sudah memiliki akun ?</string>
+    <string name="login_description">Silahkan login untuk melanjutkan</string>
+    <string name="register">Daftar</string>
+    <string name="not_have_account">Belum memiliki akun ?</string>
+    <string name="home_header_description">Temukan fotografer fovorit anda</string>
+    <string name="find_your_location">Temukan fotografer didekat anda</string>
+    <string name="nearby">Terdekat</string>
+    <string name="promotion">Promo</string>
+    <string name="help">Bantuan</string>
+    <string name="promo_today">PROMO HARI INI</string>
+    <string name="see_other">Lainnya</string>
+    <string name="search_from_maps">Cari fotografer</string>
+    <string name="nearby_photographer">FOTOGRAFER TERDEKAT</string>
+    <string name="favorite_photographer">FOTOGRAFER FAVORIT</string>
+
+    <string name="favorite_photographer_title">Fotografer Favorit</string>
+
+    <string name="home_header_welcome_message_format">Hello, %s</string>
+    <string name="photographer_experience_format">%s %s</string>
+
+    <string name="edit_service">Edit Jasa</string>
+    <string name="edit_profile">Edit Profil</string>
+    <string name="logout">Keluar</string>
+
+    <string name="email_empty">Email tidak boleh kosong!</string>
+    <string name="password_empty">Password tidak boleh kosong!</string>
+    <string name="title_activity_auth">AuthActivity</string>
+
+    <string name="ok">OK</string>
+    <string name="name_empty">Nama tidak boleh kosong!</string>
+    <string name="logout_title">Apakah anda yakin ingin keluar?</string>
+    <string name="user">Pengguna</string>
+    <string name="photographer">Fotografer</string>
+    <string name="role_empty">Tipe pengguna tidak boleh kosong!</string>
+    <string name="year">Tahun</string>
+    <string name="month">Bulan</string>
+    <string name="your_number_phone">No. Telepon</string>
+    <string name="experience_empty">Pengalaman tidak boleh kosong!</string>
+    <string name="year_or_month_empty">Tahun/Bulan tidak boleh kosong!</string>
+    <string name="price_empty">Harga tidak boleh kosong!</string>
+    <string name="promotion_empty">Promo tidak boleh kosong!</string>
+    <string name="no_hp_empty">No. telepon tidak boleh kosong!</string>
+    <string name="description_empty">Deskripsi tidak boleh kosong!</string>
+
+    <string name="location_error">-</string>
+    <string name="your_location">Masukan Alamat anda*</string>
+    <string name="location_empty">Lokasi tidak boleh kosong!</string>
+    <string name="your_profile">Upload foto profil anda*</string>
+    <string name="photo_empty">Foto profile belum dipilih!</string>
+    <string name="phone_empty">No telepon tidak boleh kosong!</string>
+    <string name="cancel_edit_profile_title">Apakah anda ingin keluar?</string>
+    <string name="cancel_edit_profile_body">Semua perubahan yang anda lakukan tidak akan tersimpan!</string>
+    <string name="save_edit_profile_title">Apakah data sudah benar?</string>
+    <string name="save_edit_profile_body">Semua perubahan yang anda lakukan akan tersimpan!</string>
+    <string name="price_format">Rp. %s</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="back">Kembali</string>
+    <string name="ui_problem_title">Solusi apabila kendala tampilan</string>
+    <string name="ui_problem_description">Jika kamu mengalami kendala tampilan pada aplikasi FotoKui seperti:\n\n1.Tampilan pada aplikasi tidak berubah setelah diperbaharui\n2.Fitur Button chat ke WhatsApp tidak berfungsi\n3.Tarik tidak dapat memuat harga / tidak muncul\n4.Tidak bisa memuat lokasi\n5.Tidak bisa menampilkan maps.\n\nSilakan pastikan konektsi internet dan GPS kamu dalam keadaan aktif dan stabil. Setelah itu, lakukan force close dan clear cache, dan update aplikasi ke versi terbaru.</string>
+    <string name="order_problem_title">Tidak bisa melakukan pemesanan</string>
+    <string name="order_problem_description">Kami mohon maaf atas ketidaknyamanannya. Apabila kamu tidak bisa melakukan pemesanan dan kamu mengalami notifikasi seperti di bawah ini:\n\n1.Kami menemukan suatu masalah di akunmu\n2.Kamu tidak dapat menggunakan fitur.\n3.Kamu tidak dapat menggunakan akun kamu saat ini.\n\nSIlakan pastikan koneksi internet kamu dalam keadaan stabil. Setelah itu, lakukan force close dan clear cache, dan update aplikasi versi terbaru.\n\nMasih memerlukan bantuan? Silakan kirim pesan atau email ke info@fotokui.com</string>
+    <string name="distance_format">%s km dari anda</string>
+    <string name="price_card_format">%sk/shot</string>
+    <string name="price_card_format_with_rp">Rp %sk/shot</string>
+</resources>
